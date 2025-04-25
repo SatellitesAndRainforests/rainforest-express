@@ -1,0 +1,37 @@
+rainforest-express/
+├── package.json
+├── .env                  # environment variables
+├── /src
+│   ├── app.js            # main entrypoint
+│   ├── /routes           # express routes
+│   ├── /controllers      # handler functions (separate from routes)
+│   ├── /services         # business logic (e.g., Mongo queries)
+│   ├── /models           # Mongoose schemas
+│   ├── /middlewares      # custom middleware (auth, error handler)
+│   ├── /views            # SSR templates (Nunjucks)
+│   ├── /public           # static files (CSS, JS, images)
+│   └── /utils            # helpers (e.g., formatters)
+
+rainforest-express/
+├── package.json
+├── .env
+├── Dockerfile
+├── docker-compose.yml
+├── README.md
+├── /config               # global app config
+│   ├── nunjucks.js       # nunjucks config
+│   └── db.js             # Mongo connection
+├── /src
+│   ├── app.js
+│   ├── server.js         # only starts app.js, great for testing
+│   ├── /routes
+│   ├── /controllers
+│   ├── /services
+│   ├── /models
+│   ├── /middlewares
+│   ├── /views
+│   ├── /public
+│   ├── /utils
+│   └── /tests
+└── .prettierrc           # code style
+

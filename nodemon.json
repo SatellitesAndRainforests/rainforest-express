@@ -1,0 +1,7 @@
+{
+  "watch": ["src"],
+  "ext": "js,njk,css",
+  "ignore": ["node_modules"],
+  "exec": "node server.js"
+}
+
