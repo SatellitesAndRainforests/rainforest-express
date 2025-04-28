@@ -43,6 +43,10 @@ require('./config/nunjucks')(app)
 const indexRouter = require('./routes/index');
 app.use('/', indexRouter);
 
+const imagesRouter = require('./routes/images');
+app.use('/', imagesRouter);
+
+
 // central error handler
 app.use(serverError);
 app.use(notFound);

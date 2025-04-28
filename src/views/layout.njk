@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" class="govuk-template">
-<head>
-  <meta charset="UTF-8">
-  <title>{{ title or "Rainforest Express" }}</title>
-  <link rel="icon" href="/test.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ title or "Rainforest Express" }}</title>
+    <link rel="icon" href="/test.ico" type="image/x-icon">
 
-  <link rel="stylesheet" href="/govuk-assets/govuk-frontend.min.css">
+    <link rel="stylesheet" href="/govuk-assets/govuk-frontend.min.css">
+    <link rel="stylesheet" href="/styles/custom.css">
+    <link rel="stylesheet" href="/styles/pages/images.css">
 
-  <script src="/govuk-assets/all.bundle.js"></script>
-  <script>
-    window.GOVUKFrontend.initAll()
-  </script>
+    <script src="/govuk-assets/all.bundle.js"></script>
+    <script>
+      window.GOVUKFrontend.initAll()
+    </script>
 
-</head>
-<body class="govuk-template__body">
+  </head>
+  <body class="govuk-template__body">
 
-  <main class="govuk-main-wrapper" id="main-content">
-    {% block content %}{% endblock %}
-  </main>
+    <div class="{{ containerClass or 'govuk-width-container' }}">
 
-</body>
+      <main class="govuk-main-wrapper" id="main-content">
+        {% block content %}{% endblock %}
+      </main>
+
+    </div>
+
+  </body>
 </html>

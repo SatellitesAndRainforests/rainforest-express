@@ -1,0 +1,8 @@
+.wide-layout {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  background-color: #f0f0f0; 
+}
+
