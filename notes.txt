@@ -2,3 +2,7 @@ npm run start
 npm run dev
 
 csrf protection for forms
+
+sudo vim /etc/caddy/Caddyfile 
+systemctl status caddy
+

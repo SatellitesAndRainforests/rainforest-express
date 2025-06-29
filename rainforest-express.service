@@ -1,0 +1,19 @@
+[Unit]
+Description=Rainforest Express.Js App
+After=network.target
+
+[Service]
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/home/ubuntu/rainforest-express
+ExecStart=/usr/bin/npm start
+Restart=always
+RestartSec=10
+Environment=NODE_ENV=production
+Environment=PORT=3000
+Environment=APP_NAME=RainforestExpress
+Environment=JAVA_BACKEND_API_URL=http://localhost:8080
+
+[Install]
+WantedBy=multi-user.target
+

@@ -10,6 +10,9 @@ const rateLimit = require('express-rate-limit');
 const { serverError, notFound } = require('./middleware/errorHandler');
 const healthRouter = require('./routes/health');
 
+// caddy
+app.set('trust proxy', 1);
+
 // gds
 app.use('/govuk-assets', express.static( path.join( __dirname, '../node_modules/govuk-frontend/dist/govuk')));
 app.use('/assets', express.static(path.join(__dirname, '../node_modules/govuk-frontend/dist/govuk/assets')));
